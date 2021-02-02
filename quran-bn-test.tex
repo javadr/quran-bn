@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{arabxetex} % for typesetting Arabic text in Rigth−To−Left direction
+\newfontfamily\bengali{NotoSansBengali-Regular}
+\usepackage[hoque,khan, trans={en,lt}]{quran-bn}
+
+\def\setTr#1{\par\bnSetTrans{#1}\ttfamily  Translation by \bnGetTrans:\par\smallskip}
+\newcommand{\compare}[1]{%
+    \noindent\hrulefill{\string #1}\hrulefill
+
+     \begin{minipage}{.46\textwidth}
+    \setTr{hoque} {\bengali #1}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{.46\textwidth}
+    \setTr{khan} {\bengali #1}
+    \end{minipage}
+    \par
+}
+
+\begin{document}
+
+\begin{arab}[utf]
+\quransurah*[1]
+\end{arab}
+{\bengali\quransurahbn*[1]}
+
+\begin{minipage}{.4\textwidth}
+\begin{arab}[utf]
+\quranayah[Al-Ikhlas][1-4]
+\end{arab}
+\end{minipage}
+\hfill
+\begin{minipage}{.4\textwidth}
+\quranayahlt[Al-Ikhlas][1-4]
+\end{minipage}
+
+\begin{minipage}{.4\textwidth}
+\bengali\quranayahbn[Al-Ikhlas][1-4]
+\end{minipage}
+\hfill
+\begin{minipage}{.4\textwidth}
+\quranayahen[Al-Ikhlas][1-4]
+\end{minipage}
+
+\ToggleBasmalah
+\compare{\quransurahbn}
+\compare{\quranayahbn[1][1]}
+\ToggleBasmalah
+\compare{\quranpagebn*[2]}
+
+\end{document}
