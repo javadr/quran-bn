@@ -17,7 +17,7 @@ The [`quran-bn`](https://ctan.org/pkg/quran-bn) package is an extension of the [
     \begin{arab}[utf]
         \quransurah[112]
     \end{arab}
-    {\bengali \quransurahbn*[112]}
+    {\bengali \quransurahbn[112]}
 
 \end{document}
 ```
