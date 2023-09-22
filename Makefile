@@ -40,7 +40,7 @@ ctan:
 	cp -v README        quran-bn
 	cd tex || exit
 	cp -v quran-bn.sty  ../quran-bn/tex
-	cp -v qurantext-de*.translation.def ../quran-bn/tex
+	cp -v qurantext-bn*.translation.def ../quran-bn/tex
 	cd ../doc/ || exit
 	cp -v quran-bn-doc.pdf quran-bn-doc.tex quran.png ../quran-bn/doc
 	cd ../sample || exit
