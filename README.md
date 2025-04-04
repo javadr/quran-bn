@@ -1,5 +1,5 @@
 # The quran-bn package
-Copyright © 2021-2023
+Copyright © 2021-2025
 
 The [`quran-bn`](https://ctan.org/pkg/quran-bn) package is an extension of the [`quran`](https://ctan.org/pkg/quran) LaTeX package, designed to enhance the typesetting of the Holy Quran by incorporating specific Bengali translations. It provides support for German translations carried out by notable translators such as `Zohurul Hoque`, and `Muhiuddin Khan`.
 
